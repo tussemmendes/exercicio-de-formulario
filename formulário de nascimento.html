@@ -34,9 +34,10 @@ input:hover{
    <fieldset><h1> <u>Formulário para as crianças de Bucucute</u></h1>
     <form>
         <table>
-Nome completo: <input type="text" placeholder="Edite o seu o nome"><br> <br> Filho de: <input type="text" placeholder="Escreve nome do seu pai"> e da mãe <input type="text" placeholder="nome da sua mãe"> <br><br><legend> 
+<label for="nome">Nome completo: </label> <input type="text" name="inome" id="nome" placeholder="Edite o seu o nome" required><br> <br> 
+<label for="filho">Filho de:</label> <input type="text" name="ifilho" id="filho" placeholder="Escreve nome do seu pai" required> <label for="mae">e da mãe</label> <input type="text" name=" imae" id="mae" placeholder="nome da sua mãe" required> <br><br><legend> 
     <br>
-Data de nascimento: <input type="date"> Natural:  <input type="text" placeholder="escreve a sua naturaldade"> <legend> Região</legend> <select name="Região" id="">
+<label for="data">Data de nascimento:</label> <input type="date"  name="idata" id="data" required> <label for="natural">Natural:</label>  <input type="text" name="natural" id="natural" placeholder="escreve a sua naturaldade" required> <legend> Região</legend> <select name="Região" id="" required>
     <option value=""></option>
     <option value=""> Cacheu</option>
     <option value="">Biombo</option>
@@ -71,6 +72,8 @@ Data de nascimento: <input type="date"> Natural:  <input type="text" placeholder
         var nome= window.prompt('Qual é o seu nome?')
  window.alert('É um prazer ter dados do seu filho aqui Sr(a):'  +   nome +'!')
      </script>
+
+
 
 </body>
 </html>
