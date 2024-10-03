@@ -37,19 +37,38 @@ input:hover{
 <label for="nome">Nome completo: </label> <input type="text" name="inome" id="nome" placeholder="Edite o seu o nome" required><br> <br> 
 <label for="filho">Filho de:</label> <input type="text" name="ifilho" id="filho" placeholder="Escreve nome do seu pai" required> <label for="mae">e da mãe</label> <input type="text" name=" imae" id="mae" placeholder="nome da sua mãe" required> <br><br><legend> 
     <br>
-<label for="data">Data de nascimento:</label> <input type="date"  name="idata" id="data" required> <label for="natural">Natural:</label>  <input type="text" name="natural" id="natural" placeholder="escreve a sua naturaldade" required> <legend> Região</legend> <select name="Região" id="" required>
-    <option value=""></option>
-    <option value=""> Cacheu</option>
-    <option value="">Biombo</option>
-    <option value="">Bafata</option>
-    <option value="">Oio</option>
-    <option value="">Bolama Bijagós</option>
-    <option value="">Gabú</option>
-    <option value="">Quinara</option>
-    <option value="">Tombali</option>
-    <option value="">S.A Bissau</option>
+<label for="data">Data de nascimento:</label> <input type="date"  name="idata" id="data" required> <label for="natural">Natural:</label>  <input type="text" name="natural" id="natural" placeholder="escreve a sua naturaldade" required>
 
-</select><legend>sector</legend><select name="sector" id="">
+<label for="região" lista > Região:</label>
+
+<datalist label="lista">
+    
+        <optgroup label="Norte">
+    
+            <option value=""> Cacheu</option>
+            <option value="">Biombo</option>
+               <option value="">Oio</option>
+        </optgroup>
+    
+       <optgroup label="Leste">
+           <option value="">Bafata</option>
+            <option value="">Gabú</option>
+       </optgroup>
+    
+        <optgroup label="Sul">
+            <option value="">Bolama Bijagós</option>
+             <option value="">Quinara</option>
+            <option value="">Tombali</option>
+        </optgroup>
+    
+        <optgroup label="Capital">
+            <option value="" selected>S.A Bissau</option>
+        </optgroup>
+    
+</datalist>
+
+
+<legend>sector</legend><select name="sector" id="">
     <option value=""></option>
     <option>Canchungo</option>
     <option>Bula</option>
