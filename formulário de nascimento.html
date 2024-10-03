@@ -40,47 +40,38 @@ input:hover{
 <label for="data">Data de nascimento:</label> <input type="date"  name="idata" id="data" required> <label for="natural">Natural:</label>  <input type="text" name="natural" id="natural" placeholder="escreve a sua naturaldade" required>
 
 <label for="região" lista > Região:</label>
-
-<datalist label="lista">
-    
-        <optgroup label="Norte">
-    
-            <option value=""> Cacheu</option>
-            <option value="">Biombo</option>
-               <option value="">Oio</option>
-        </optgroup>
-    
-       <optgroup label="Leste">
-           <option value="">Bafata</option>
-            <option value="">Gabú</option>
-       </optgroup>
-    
-        <optgroup label="Sul">
-            <option value="">Bolama Bijagós</option>
-             <option value="">Quinara</option>
-            <option value="">Tombali</option>
-        </optgroup>
-    
-        <optgroup label="Capital">
-            <option value="" selected>S.A Bissau</option>
-        </optgroup>
-    
-</datalist>
+<input type="text" name="list" id="região" list="lista" placeholder="A sua região" required>
+    <datalist id="lista">
+                <option > Cacheu</option>
+                <option >Biombo</option>
+                <option >Oio</option>
+                <option >Bafata</option>
+                <option >Gabú</option>
+                <option >Bolama Bijagós</option>
+                 <option >Quinara</option>
+                <option >Tombali</option>
+                <option selected>S.A Bissau</option>
+    </datalist>
 
 
-<legend>sector</legend><select name="sector" id="">
-    <option value=""></option>
-    <option>Canchungo</option>
-    <option>Bula</option>
-    <option>Caliquidr</option>
-    <option>São Domingos</option>
-    <option>Bigene</option>
+
+<label for="sector">Sector:</label>
+    <input type="text" name="isector" id="sector" list="listsector" placeholder="o seu sector" required>
+
+    <datalist id="listsector">
+        <option >Cacheu</option>
+        <option selected>Canchungo</option>
+        <option>Bula</option>
+        <option>Caliquidr</option>
+        <option>São Domingos</option>
+        <option>Bigene</option>
+    </datalist>
 </select> <br> <br><br>
 
 <fieldset> <legend> sexo</legend> Maculino <input type="radio" name="sexo"> femino <input type="radio" name="sexo"> </fieldset>
 <b>Profissão do pai:</b> pedreiro <input type="checkbox"> professor <input type="checkbox" name="" id=""> carpinteiro <input type="checkbox"> outro <input type="checkbox"> <input type="text" placeholder="outro, degite a profissão"><BR></BR>
 
-<fieldset>COMENTÁRIO: <TEXtarea></TEXtarea>
+<fieldset>COMENTÁRIO: <TEXtarea> </TEXtarea>
 
 </fieldset>
         </table>
